@@ -235,4 +235,30 @@ document.addEventListener("DOMContentLoaded", function () {
       closeModal();
     }
   });
+
+  // Testimonial Form Logic
+  const anonimCheck = document.getElementById("anonimCheck");
+  const nameGroup = document.getElementById("nameGroup");
+  const reviewerName = document.getElementById("reviewerName");
+  const reviewForm = document.getElementById("reviewForm");
+
+  if (anonimCheck && nameGroup) {
+    anonimCheck.addEventListener("change", function () {
+      if (this.checked) {
+        nameGroup.style.display = "none";
+        reviewerName.value = "";
+      } else {
+        nameGroup.style.display = "flex";
+      }
+    });
+  }
+
+  if (reviewForm) {
+    reviewForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Mohon maaf, sistem pengiriman ulasan belum dapat digunakan karena masih dalam tahap pengembangan.");
+      reviewForm.reset();
+      if (nameGroup) nameGroup.style.display = "flex";
+    });
+  }
 });

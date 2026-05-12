@@ -34,6 +34,7 @@
         <a href="#beranda" class="active">Beranda</a>
         <a href="#tentang">Tentang Kami</a>
         <a href="#menu">Menu</a>
+        <a href="#testimoni">Testimoni</a>
         <a href="javascript:void(0)" id="linkLokasiNav">Lokasi</a>
         <a href="#kontak">Kontak</a>
       </nav>
@@ -57,6 +58,7 @@
       <a href="#beranda">Beranda</a>
       <a href="#tentang">Tentang Kami</a>
       <a href="#menu">Menu</a>
+      <a href="#testimoni">Testimoni</a>
       <a href="javascript:void(0)" id="linkLokasiMobile">Lokasi</a>
       <a href="#kontak">Kontak</a>
 
@@ -166,7 +168,7 @@
           <!-- Card 1 -->
           <article class="card">
             <div class="card-img">
-              <img src="assets/image.png" alt="Gafla Matcha" />
+              <img src="assets/logo-ganova.png" alt="Gafla Matcha" />
             </div>
 
             <div class="card-body">
@@ -180,7 +182,7 @@
 
               <div class="card-price">
                 <small>1 Porsi</small>
-                <strong>Rp 12.000</strong>
+                <strong>Rp 13.000</strong>
               </div>
 
               <a href="#kontak" class="btn-card">
@@ -193,7 +195,7 @@
           <!-- Card 2 -->
           <article class="card">
             <div class="card-img">
-              <img src="assets/image.png" alt="Gafla Coklat" />
+              <img src="assets/img-coklat.jpeg" alt="Gafla Coklat" />
             </div>
 
             <div class="card-body">
@@ -207,7 +209,7 @@
 
               <div class="card-price">
                 <small>1 Porsi</small>
-                <strong>Rp 12.000</strong>
+                <strong>Rp 13.000</strong>
               </div>
 
               <a href="#kontak" class="btn-card">
@@ -234,7 +236,7 @@
 
               <div class="card-price">
                 <small>1 Porsi</small>
-                <strong>Rp 12.000</strong>
+                <strong>Rp 13.000</strong>
               </div>
 
               <a href="#kontak" class="btn-card">
@@ -247,7 +249,7 @@
           <!-- Card 4 -->
           <article class="card">
             <div class="card-img">
-              <img src="assets/image.png" alt="Gafla Taro" />
+              <img src="assets/img-taro.jpeg" alt="Gafla Taro" />
             </div>
 
             <div class="card-body">
@@ -261,7 +263,7 @@
 
               <div class="card-price">
                 <small>1 Porsi</small>
-                <strong>Rp 12.000</strong>
+                <strong>Rp 13.000</strong>
               </div>
 
               <a href="#kontak" class="btn-card">
@@ -275,9 +277,103 @@
 
       </div>
     </section>
-
     </section>
 
+    <!-- Testimoni -->
+    <section class="testimonial" id="testimoni">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kata Mereka</h2>
+          <p>
+            Kepuasan Anda adalah prioritas kami. Lihat apa kata pelanggan tentang lezatnya Gabin Fla dari Ganova, atau
+            bagikan pengalaman Anda sendiri!
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+          <!-- Sample Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">A</div>
+              <div class="testimonial-info">
+                <strong>Anita</strong>
+                <div class="testimonial-rating">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Rasa matcha-nya pas banget, gak terlalu manis dan fla-nya lembut. Biskuitnya juga masih renyah waktu
+              sampai!"
+            </p>
+          </div>
+
+          <!-- Sample Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar anonymous-avatar">
+                <span class="material-symbols-outlined">person</span>
+              </div>
+              <div class="testimonial-info">
+                <strong>Anonim</strong>
+                <div class="testimonial-rating">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Tiramisunya the best! Harganya murah meriah tapi rasanya mewah banget. Bakal langganan terus."
+            </p>
+          </div>
+
+          <!-- Form Review -->
+          <div class="testimonial-form-card">
+            <h3>Kirim Ulasan Anda</h3>
+            <form id="reviewForm" class="review-form">
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="anonimCheck" name="anonimCheck" />
+                <label for="anonimCheck">Kirim sebagai Anonim</label>
+              </div>
+
+              <div class="form-group" id="nameGroup">
+                <label for="reviewerName">Nama (Opsional)</label>
+                <input type="text" id="reviewerName" name="reviewerName" placeholder="Nama Anda" />
+              </div>
+
+              <div class="form-group">
+                <label for="reviewRating">Penilaian</label>
+                <select id="reviewRating" name="reviewRating" required>
+                  <option value="5">⭐⭐⭐⭐⭐ (Sangat Bagus)</option>
+                  <option value="4">⭐⭐⭐⭐ (Bagus)</option>
+                  <option value="3">⭐⭐⭐ (Cukup)</option>
+                  <option value="2">⭐⭐ (Kurang)</option>
+                  <option value="1">⭐ (Sangat Kurang)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="reviewText">Pesan / Ulasan</label>
+                <textarea id="reviewText" name="reviewText" rows="3" placeholder="Bagaimana rasa Gabin Fla kami?"
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-main" style="width: 100%; margin-top: 8px;">Kirim Ulasan</button>
+              <p style="font-size: 12px; color: var(--muted); text-align: center; margin-top: 8px;">*Fitur ini masih
+                dalam tahap pengembangan.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
     <!-- Kontak -->
     <section class="contact" id="kontak">
       <div class="container">
