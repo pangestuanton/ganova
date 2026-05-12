@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -34,13 +34,12 @@
         <a href="#beranda" class="active">Beranda</a>
         <a href="#tentang">Tentang Kami</a>
         <a href="#menu">Menu</a>
-        <a href="#promo">Promo</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#testimoni">Testimoni</a>
+        <a href="javascript:void(0)" id="linkLokasiNav">Lokasi</a>
+        <a href="#kontak">Kontak</a>
       </nav>
 
       <div class="header-action">
-        <a href="https://wa.me/6282278386663" class="btn btn-main desktop-btn">
+        <a href="#kontak" class="btn btn-main desktop-btn">
           Pesan via WhatsApp
         </a>
 
@@ -58,11 +57,13 @@
       <a href="#beranda">Beranda</a>
       <a href="#tentang">Tentang Kami</a>
       <a href="#menu">Menu</a>
+      <a href="javascript:void(0)" id="linkLokasiMobile">Lokasi</a>
+      <a href="#kontak">Kontak</a>
       <a href="#promo">Promo</a>
       <a href="#galeri">Galeri</a>
       <a href="#testimoni">Testimoni</a>
 
-      <a href="https://wa.me/6282278386663" class="btn btn-main">
+      <a href="#kontak" class="btn btn-main">
         Pesan via WhatsApp
       </a>
     </div>
@@ -85,7 +86,7 @@
           </p>
 
           <div class="hero-btn">
-            <a href="https://wa.me/6282278386663" class="btn btn-main">
+            <a href="#kontak" class="btn btn-main">
               Pesan Sekarang
             </a>
 
@@ -96,7 +97,7 @@
         </div>
 
         <div class="hero-img">
-          <img src="assets/image.png" alt="Logo Ganova" />
+          <img src="assets/logo-ganova.png" alt="Logo Ganova" />
         </div>
 
       </div>
@@ -110,45 +111,42 @@
           <h2>Tentang Kami</h2>
 
           <p>
-            Berawal dari kecintaan pada resep warisan, Ganova hadir untuk
-            melestarikan cita rasa klasik dengan standar kualitas modern.
-            Setiap produk kami dibuat dengan penuh ketelitian, memastikan Anda
-            merasakan kemewahan dalam setiap kesederhanaan.
+            Gabin Fla adalah camilan klasik yang memadukan biskuit gabin renyah dengan isian fla lembut yang manis.
+            Ganova hadir untuk menyempurnakan resep tradisional ini dengan bahan premium dan sentuhan modern,
+            menghadirkan kemewahan rasa dalam setiap gigitan sederhana.
           </p>
         </div>
 
         <div class="feature-grid">
 
           <div class="feature-card">
-            <span class="material-symbols-outlined icon">restaurant_menu</span>
+            <span class="material-symbols-outlined icon">verified</span>
 
-            <h3>Rasa Khas &amp; Konsisten</h3>
+            <h3>Selalu Fresh &amp; Higienis</h3>
 
             <p>
-              Dedikasi kami pada resep asli menjaga konsistensi rasa yang tak
-              lekang oleh waktu.
+              Produk dibuat setiap hari dengan standar kebersihan tinggi untuk memastikan kualitas dan kesegaran
+              terbaik.
             </p>
           </div>
 
           <div class="feature-card">
             <span class="material-symbols-outlined icon">workspace_premium</span>
 
-            <h3>Bahan Berkualitas</h3>
+            <h3>Bahan Pilihan Premium</h3>
 
             <p>
-              Hanya menggunakan bahan baku pilihan premium untuk menjamin
-              kelezatan dan kesehatan.
+              Menggunakan biskuit gabin berkualitas dan bahan fla pilihan tanpa pengawet untuk rasa yang autentik.
             </p>
           </div>
 
           <div class="feature-card">
-            <span class="material-symbols-outlined icon">celebration</span>
+            <span class="material-symbols-outlined icon">payments</span>
 
-            <h3>Cocok Segala Acara</h3>
+            <h3>Menerima Layanan COD</h3>
 
             <p>
-              Pilihan sempurna untuk camilan harian, acara spesial, maupun
-              oleh-oleh istimewa.
+              Nikmati kemudahan pemesanan dengan layanan bayar di tempat (COD) untuk wilayah tertentu.
             </p>
           </div>
 
@@ -171,25 +169,24 @@
           <!-- Card 1 -->
           <article class="card">
             <div class="card-img">
-              <img src="assets/image.png" alt="Ganova Original" />
+              <img src="assets/image.png" alt="Gafla Matcha" />
             </div>
 
             <div class="card-body">
               <div class="card-title">
-                <h3>Ganova Original</h3>
-                <span>Best</span>
+                <h3>Gafla Matcha</h3>
               </div>
 
               <p>
-                Rasa klasik autentik dengan bumbu rempah pilihan.
+                Perpaduan matcha premium dengan rasa yang lembut dan menenangkan.
               </p>
 
               <div class="card-price">
                 <small>1 Porsi</small>
-                <strong>Rp 35.000</strong>
+                <strong>Rp 12.000</strong>
               </div>
 
-              <a href="https://wa.me/6282278386663" class="btn-card">
+              <a href="#kontak" class="btn-card">
                 <span class="material-symbols-outlined">chat</span>
                 Pesan via WhatsApp
               </a>
@@ -199,24 +196,24 @@
           <!-- Card 2 -->
           <article class="card">
             <div class="card-img">
-              <img src="assets/image.png" alt="Ganova Spesial" />
+              <img src="assets/image.png" alt="Gafla Coklat" />
             </div>
 
             <div class="card-body">
               <div class="card-title">
-                <h3>Ganova Spesial</h3>
+                <h3>Gafla Coklat</h3>
               </div>
 
               <p>
-                Tambahan topping spesial untuk pengalaman rasa maksimal.
+                Kelezatan coklat pilihan dengan kekentalan yang pas di lidah.
               </p>
 
               <div class="card-price">
                 <small>1 Porsi</small>
-                <strong>Rp 45.000</strong>
+                <strong>Rp 12.000</strong>
               </div>
 
-              <a href="https://wa.me/6282278386663" class="btn-card">
+              <a href="#kontak" class="btn-card">
                 <span class="material-symbols-outlined">chat</span>
                 Pesan via WhatsApp
               </a>
@@ -226,25 +223,24 @@
           <!-- Card 3 -->
           <article class="card">
             <div class="card-img">
-              <img src="assets/image.png" alt="Ganova Premium" />
+              <img src="assets/image.png" alt="Gafla Tiramisu" />
             </div>
 
             <div class="card-body">
               <div class="card-title">
-                <h3>Ganova Premium</h3>
-                <span>Chef's Choice</span>
+                <h3>Gafla Tiramisu</h3>
               </div>
 
               <p>
-                Kualitas daging dan bahan terbaik, porsi memuaskan.
+                Cita rasa kopi tiramisu yang autentik dan mewah di setiap gigitan.
               </p>
 
               <div class="card-price">
                 <small>1 Porsi</small>
-                <strong>Rp 65.000</strong>
+                <strong>Rp 12.000</strong>
               </div>
 
-              <a href="https://wa.me/6282278386663" class="btn-card">
+              <a href="#kontak" class="btn-card">
                 <span class="material-symbols-outlined">chat</span>
                 Pesan via WhatsApp
               </a>
@@ -254,29 +250,73 @@
           <!-- Card 4 -->
           <article class="card">
             <div class="card-img">
-              <img src="assets/image.png" alt="Paket Hemat" />
+              <img src="assets/image.png" alt="Gafla Taro" />
             </div>
 
             <div class="card-body">
               <div class="card-title">
-                <h3>Paket Hemat</h3>
+                <h3>Gafla Taro</h3>
               </div>
 
               <p>
-                Kombinasi sempurna untuk dinikmati bersama keluarga.
+                Manisnya taro yang unik dan menyegarkan untuk hari Anda.
               </p>
 
               <div class="card-price">
-                <small>4 Porsi</small>
-                <strong>Rp 120.000</strong>
+                <small>1 Porsi</small>
+                <strong>Rp 12.000</strong>
               </div>
 
-              <a href="https://wa.me/6282278386663" class="btn-card">
+              <a href="#kontak" class="btn-card">
                 <span class="material-symbols-outlined">chat</span>
                 Pesan via WhatsApp
               </a>
             </div>
           </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    </section>
+
+    <!-- Kontak -->
+    <section class="contact" id="kontak">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Hubungi Kami</h2>
+          <p>
+            Silakan hubungi salah satu admin kami di bawah ini untuk pemesanan atau pertanyaan lebih lanjut.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <a href="https://wa.me/62895601662500" class="contact-card" target="_blank">
+            <span class="material-symbols-outlined">chat</span>
+            <div class="contact-info">
+              <strong>Admin 1</strong>
+              <span>+62 895-6016-62500</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/6287846783369" class="contact-card" target="_blank">
+            <span class="material-symbols-outlined">chat</span>
+            <div class="contact-info">
+              <strong>Admin 2</strong>
+              <span>+62 878-4678-3369</span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/ganova.id?igsh=dWx3NWhpM2NxdHR5" class="contact-card" target="_blank">
+            <span class="material-symbols-outlined">photo_camera</span>
+            <div class="contact-info">
+              <strong>Instagram</strong>
+              <span>@ganova.id</span>
+            </div>
+          </a>
 
         </div>
 
@@ -290,16 +330,92 @@
     <div class="footer-logo">Ganova</div>
 
     <nav class="footer-nav">
-      <a href="#">Lokasi</a>
-      <a href="#">Kontak</a>
-      <a href="#">Syarat &amp; Ketentuan</a>
-      <a href="#">Kebijakan Privasi</a>
+      <a href="javascript:void(0)" id="linkLokasiFooter">Lokasi</a>
+      <a href="#kontak">Kontak</a>
+      <a href="javascript:void(0)" id="linkSyarat">Syarat &amp; Ketentuan</a>
+      <a href="javascript:void(0)" id="linkPrivasi">Kebijakan Privasi</a>
     </nav>
 
     <p>© 2026 Ganova. Klasik Tapi Beda Kasta.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Modals -->
+  <div id="modalSyarat" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeSyarat">&times;</span>
+      <h2>Syarat &amp; Ketentuan</h2>
+      <div class="modal-body">
+        <h3>1. Pemesanan</h3>
+        <p>Pemesanan dapat dilakukan melalui WhatsApp resmi yang tertera di situs web kami. Harap memberikan detail
+          pesanan (varian rasa dan jumlah) serta alamat pengiriman dengan jelas.</p>
+
+        <h3>2. Pembayaran</h3>
+        <ul>
+          <li>Kami menerima pembayaran melalui Transfer Bank dan Bayar di Tempat (COD).</li>
+          <li>Untuk metode COD, hanya berlaku untuk wilayah jangkauan tertentu.</li>
+          <li>Pembayaran transfer harus dikonfirmasi dengan bukti transfer yang sah.</li>
+        </ul>
+
+        <h3>3. Pengiriman</h3>
+        <p>Pengiriman akan dilakukan pada hari yang sama atau sesuai jadwal yang disepakati setelah pesanan
+          dikonfirmasi. Biaya pengiriman ditanggung oleh pembeli kecuali ada promo khusus.</p>
+
+        <h3>4. Pembatalan &amp; Pengembalian</h3>
+        <p>Pesanan yang sudah diproses tidak dapat dibatalkan. Pengembalian produk hanya diterima jika terjadi kesalahan
+          varian atau kerusakan produk saat diterima, dengan menyertakan bukti foto/video.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalPrivasi" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closePrivasi">&times;</span>
+      <h2>Kebijakan Privasi</h2>
+      <div class="modal-body">
+        <h3>1. Informasi yang Kami Kumpulkan</h3>
+        <p>Kami hanya mengumpulkan informasi yang diperlukan untuk memproses pesanan Anda, seperti nama, nomor telepon,
+          dan alamat pengiriman.</p>
+
+        <h3>2. Penggunaan Informasi</h3>
+        <p>Informasi Anda digunakan semata-mata untuk memproses dan mengirimkan pesanan Anda, serta menghubungi Anda
+          terkait status pesanan.</p>
+
+        <h3>3. Keamanan Data</h3>
+        <p>Kami berkomitmen untuk menjaga keamanan data pribadi Anda dan tidak akan membagikannya kepada pihak ketiga
+          tanpa izin Anda, kecuali diperlukan untuk proses pengiriman.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalLokasi" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeLokasi">&times;</span>
+      <h2>Lokasi Kami</h2>
+      <div class="modal-body">
+        <div class="location-modal-info">
+          <span class="material-symbols-outlined"
+            style="font-size: 48px; color: var(--primary); margin-bottom: 16px; display: block;">location_on</span>
+          <h3>Gisting, Tanggamus</h3>
+          <p>Kami melayani pengiriman untuk wilayah Gisting, Tanggamus, dan sekitarnya.</p>
+
+          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <a href="https://www.google.com/maps/place/Gisting,+Kec.+Gisting,+Kabupaten+Tanggamus,+Lampung"
+              target="_blank" class="btn btn-main" style="width: 100%;">
+              Lihat di Google Maps
+            </a>
+
+            <div
+              style="background: var(--soft); padding: 20px; border-radius: 12px; text-align: left; margin-top: 12px;">
+              <h4 style="color: var(--primary); margin-bottom: 8px;">Jam Operasional</h4>
+              <p>Senin - Minggu: 09:00 - 21:00 WIB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

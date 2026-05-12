@@ -172,4 +172,67 @@ document.addEventListener("DOMContentLoaded", function () {
       this.alt = "Gambar belum tersedia";
     });
   });
+
+  // ===============================
+  // Legal Modals
+  // ===============================
+
+  const modalSyarat = document.getElementById("modalSyarat");
+  const modalPrivasi = document.getElementById("modalPrivasi");
+  const modalLokasi = document.getElementById("modalLokasi");
+
+  const linkSyarat = document.getElementById("linkSyarat");
+  const linkPrivasi = document.getElementById("linkPrivasi");
+  const linkLokasiNav = document.getElementById("linkLokasiNav");
+  const linkLokasiMobile = document.getElementById("linkLokasiMobile");
+  const linkLokasiFooter = document.getElementById("linkLokasiFooter");
+
+  const closeSyarat = document.getElementById("closeSyarat");
+  const closePrivasi = document.getElementById("closePrivasi");
+  const closeLokasi = document.getElementById("closeLokasi");
+
+  const locationLinks = [linkLokasiNav, linkLokasiMobile, linkLokasiFooter];
+
+  if (linkSyarat && modalSyarat) {
+    linkSyarat.addEventListener("click", function (e) {
+      e.preventDefault();
+      modalSyarat.style.display = "block";
+      document.body.style.overflow = "hidden";
+    });
+  }
+
+  if (linkPrivasi && modalPrivasi) {
+    linkPrivasi.addEventListener("click", function (e) {
+      e.preventDefault();
+      modalPrivasi.style.display = "block";
+      document.body.style.overflow = "hidden";
+    });
+  }
+
+  locationLinks.forEach(link => {
+    if (link && modalLokasi) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        modalLokasi.style.display = "block";
+        document.body.style.overflow = "hidden";
+      });
+    }
+  });
+
+  function closeModal() {
+    if (modalSyarat) modalSyarat.style.display = "none";
+    if (modalPrivasi) modalPrivasi.style.display = "none";
+    if (modalLokasi) modalLokasi.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  if (closeSyarat) closeSyarat.addEventListener("click", closeModal);
+  if (closePrivasi) closePrivasi.addEventListener("click", closeModal);
+  if (closeLokasi) closeLokasi.addEventListener("click", closeModal);
+
+  window.addEventListener("click", function (event) {
+    if (event.target == modalSyarat || event.target == modalPrivasi || event.target == modalLokasi) {
+      closeModal();
+    }
+  });
 });
