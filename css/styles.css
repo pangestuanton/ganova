@@ -790,6 +790,8 @@ h3,
 
     .hero-text {
         order: 2;
+        text-align: center;
+        align-items: center;
     }
 
     .hero-img {
@@ -823,6 +825,21 @@ h3,
     .menu-grid {
         grid-template-columns: 1fr;
     }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -849,5 +866,10 @@ h3,
 
     .card-body {
         padding: 20px;
+    }
+
+    .modal-content {
+        padding: 24px 20px;
+        margin: 20% auto;
     }
 }
