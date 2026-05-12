@@ -37,4 +37,10 @@ Website ini adalah *Single Page Application* (satu halaman) yang sangat mudah di
 - `assets/`: Folder berisi gambar produk dan logo brand.
 
 ---
+
+## 📈 Panduan Promosi
+Untuk panduan pemasaran dan penggunaan konten web sebagai media promosi, silakan baca:
+👉 **[PROMOTION_GUIDE.md](PROMOTION_GUIDE.md)**
+
+---
 © 2026 Ganova.
